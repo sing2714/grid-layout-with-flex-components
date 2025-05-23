@@ -1,0 +1,52 @@
+body {
+  font-family: "Anton",sans-serif;
+  color: black;
+}
+
+.siteheader h1 {
+  max-width: 1200px;
+  margin: 40px;
+}
+
+.emojis {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr); /* make columns 2 by 2  */
+  gap: 28px;/* make gap between boxes */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.emoji {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.emoji h2 {
+  margin: 0;
+  border-bottom: 2px solid grey;
+  order: 1;
+}
+
+.emoji .icon {
+  font-size: 4rem;
+  order: 0; /* Emoji will come before title */
+  align-self: center; /* Centers all emojis  */
+  margin: 10px 0; 
+}
+
+.emoji p {
+  order: 2; /* Makes paragraph appear after title */
+  flex-grow: 1; /* Pushes button to downward */
+}
+
+.emoji a {
+  background-color: #7015a1;
+  color: white;
+  padding: 1.25rem;
+  border-radius: 8px;
+  text-decoration: none; /* remove underline form text */
+  order: 3; /* Makes button at last */
+}
